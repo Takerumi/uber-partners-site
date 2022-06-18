@@ -446,75 +446,78 @@ nav {
   a {
     text-decoration: none;
   }
+
   &_divider {
-    width: 300px;
+    width: 299px;
     height: 4px;
+    background-color: #1fbad6;
     margin: 0 auto;
-    background: #1fbad6;
   }
   &_wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding-top: 32px;
-    &_wrapper > div {
-      width: 33%;
-      &:nth-child(3) {
-        display: flex;
-        justify-content: flex-end;
+  }
+  &_wrapper > div {
+    width: 33%;
+    &:nth-child(3) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  &_social {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    &_item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 4px;
+      width: 32px;
+      height: 32px;
+      background-color: #070716;
+      border-radius: 100%;
+      i {
+        color: #fff;
       }
     }
-    &_social {
-      width: 160px;
+  }
+  &_links {
+    width: 390px;
+    margin: 0 auto;
+    &_main {
       display: flex;
       justify-content: space-between;
-      margin-left: 23px;
-      &_item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 4px;
-        width: 32px;
-        height: 32px;
-        background: #070716;
-        border-radius: 100%;
+      padding: 0 10px;
+      a {
+        color: #070716;
+        font-size: 15px;
+        font-weight: 300;
+        text-transform: uppercase;
       }
     }
-    &_links {
-      width: 390px;
-      margin: 0 auto;
-      &_main {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 10px;
-        a {
-          color: #070716;
-          font-size: 15px;
-          font-weight: 300;
-          text-transform: uppercase;
-        }
-      }
-      &_sub {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 10px;
-        a {
-          color: #999999;
-          font-size: 11px;
-          font-weight: 300;
-          text-transform: uppercase;
-        }
-      }
-      &_lang {
-        display: block;
-        margin: 0 auto;
-        color: #1fbad6;
+    &_sub {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      a {
+        color: #999999;
         font-size: 11px;
-        font-weight: 400;
-        margin-top: 19px;
+        font-weight: 300;
         text-transform: uppercase;
-        text-align: center;
       }
+    }
+    &_lang {
+      display: block;
+      margin: 0 auto;
+      color: #1fbad6;
+      font-size: 11px;
+      font-weight: 400;
+      margin-top: 19px;
+      text-transform: uppercase;
+      text-align: center;
     }
   }
 }
