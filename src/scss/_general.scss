@@ -23,6 +23,9 @@ nav {
     font-size: 15px;
     color: #ffffff;
     text-decoration: none;
+    &:hover {
+      color: $main-color;
+    }
   }
 
   &_item {
@@ -77,6 +80,9 @@ nav {
     text-decoration: none;
     line-height: 12px;
     margin-top: 8px;
+    &:hover {
+      color: $main-color;
+    }
   }
 
   &_btn {
@@ -202,40 +208,38 @@ nav {
 }
 
 .benefits {
-  .benefits_block {
+  padding: 71px 0 65px 0;
+  &_block {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 35px;
-
-    .benefits_round {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-right: 26px;
-      width: 113px;
-      height: 113px;
-      background: $main_color;
-      border-radius: 100%;
-    }
+  }
+  &_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+    width: 113px;
+    height: 113px;
+    background: $main_color;
+    border-radius: 100%;
+  }
+  &_descr {
+    width: 343px;
+  }
+  &_subtitle {
+    color: $main_color;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
   }
 
-  .benefits_descr {
-    width: 343px;
-
-    .benefits_subtitle {
-      color: $main_color;
-      font-weight: 400;
-      font-size: 17px;
-      line-height: 21px;
-    }
-
-    ._benefits_text {
-      color: #000000;
-      font-weight: 300;
-      font-size: 15px;
-      line-height: 21px;
-    }
+  &_text {
+    color: #202020;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
   }
 }
 
@@ -508,4 +512,8 @@ nav {
       text-align: center;
     }
   }
+}
+
+.xs-visible {
+  display: none;
 }
